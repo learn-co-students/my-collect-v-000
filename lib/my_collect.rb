@@ -9,12 +9,3 @@ def my_collect(array)
   first_names
 end
 
-# call #my_collect
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-my_collect(array) do |name|
-  name.split(" ").first
-end
-
-
-# => ["Tim", "Tom", "Jim"]
-
