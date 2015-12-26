@@ -8,5 +8,6 @@ def my_collect(student_names)
   first_names
 end
 
-
+#just testing out how to call the method 
+my_collect(["Grace Lee", "Heather Paik", "Gloria Lee"]) { |name| puts name.split(" ").first}
 
