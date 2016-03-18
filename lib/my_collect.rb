@@ -11,5 +11,4 @@ def my_collect(names)
   else
     return nil
   end
-  #first_names (?)
 end
