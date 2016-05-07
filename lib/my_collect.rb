@@ -3,13 +3,12 @@ require 'pry'
 def my_collect(array)
   if block_given?
     counter = 0
-    new_collection = []
+    new_array = []
     while counter < array.length
-      indexed_element = yield(array[counter])
-      new_collection << indexed_element
+      new_array << yield(array[counter])
       counter += 1
     end
-    new_collection
+    new_array
   else
     puts "Hey, no block was given!"
   end
