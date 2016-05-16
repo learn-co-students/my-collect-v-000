@@ -1,9 +1,19 @@
-def my_collect(array)
-  i = 0
-  collect = []
-  while i < array.length
-    collect << yield(array[i])
-    i+=1
+
+def my_each(array)
+  i = 0 
+  while i < array.length 
+    yield(array[i])
+    i += 1 
   end
-  collect
+  array 
 end
+
+def my_collect(array)
+  result = [] 
+  my_each(array) do |el|
+    result << el.upcase
+  end
+  result 
+end
+
+
