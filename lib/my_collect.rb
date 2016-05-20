@@ -1,4 +1,3 @@
-languages = ["Tim", "Tom", "Jim"]
 def my_collect(array)
   count = 0
   collection = []
@@ -8,5 +7,3 @@ def my_collect(array)
   end
   collection
 end
-
-my_collect(languages) {|name| name }
