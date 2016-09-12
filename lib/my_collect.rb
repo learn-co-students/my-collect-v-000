@@ -1,14 +1,13 @@
-def my_collect(collection)
-  i = 0
-  group = []
-  while i < collection.length
-    group << yield(collection[i])
-    i += i
+def my_collect(array)
+  if block_given?
+    counter = 0
+    group = []
+    while counter < array.length
+      group << yield(array[counter])
+      counter += 1
+    end
+    group
+  else
+    puts "Hey, no block was given!"
   end
-  group
-end
-
-array = ["Tim Jones", "Tom Smith", "Jim Campagno"]
-my_collect(array) do |name|
-  name.split(" ").first
 end
