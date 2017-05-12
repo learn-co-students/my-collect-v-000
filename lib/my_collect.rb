@@ -8,3 +8,7 @@ def my_collect(array)
   end
   newest_array
 end
+
+#I have to continue editing this so I can perform 
+#a pull request again, because it says that I have
+#not completed the assignment.
