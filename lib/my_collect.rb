@@ -1,10 +1,10 @@
 require 'pry'
 def my_collect(array)
   i = 0
-  new_array = []
+  newest_array = []
   while array.length > i
-    new_array << yield(array[i])
+    newest_array << yield(array[i])
     i += 1
   end
-  new_array
+  newest_array
 end
