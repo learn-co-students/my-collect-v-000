@@ -4,6 +4,7 @@ def my_collect(array)
     collection = []
     while i < array.length
       collection << yield(array[i])
+      i += 1
     end
   else
     puts "No block given!"
@@ -12,4 +13,3 @@ def my_collect(array)
 end
 
 my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) { |name| name.split(" ").first }
-
