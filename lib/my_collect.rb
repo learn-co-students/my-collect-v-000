@@ -1,25 +1,14 @@
 languages =['ruby', 'javascript', 'python', 'objective-c']
 students = ['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']
 
-
 def my_collect(array)
-  counter = 0
-  new_array = []
-  if array.empty?
-    return
-  else
-    while counter < array.length
-    new_array << yield(array[counter])
-      counter += 1
+  if !(array.empty?)
+    n = 0
+    collection = []
+    while n < array.length
+        collection << yield(array[n])
+        n += 1
     end
-  new_array
+      collection
   end
-end
-
-my_collect(students) do |student|
-  student.split(" ")
-end
-
-my_collect(languages) do |language|
-  language.upcase
 end
