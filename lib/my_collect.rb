@@ -8,10 +8,3 @@ def my_collect(array)
   end
   collect
 end
-
-
-#while i < collection.length
-  #  yield(collection[i])
-  #  i = i + 1
-#  end
-  #collection
