@@ -8,4 +8,4 @@ end
 new_array
 end
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) {|names| "#{names}" }
+my_collect([]) {|names| "#{names}" }
