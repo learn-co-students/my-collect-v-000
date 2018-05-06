@@ -10,7 +10,7 @@
   def my_collection(collection)
     if block_given?
       i = 0
-      whiled i < array.length
+      while i < array.length
       yield(array[i])
       i = 1 + i
     end
@@ -18,5 +18,6 @@
   else
     puts
   end
+end
   
   
