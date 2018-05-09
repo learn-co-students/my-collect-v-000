@@ -1,13 +1,13 @@
 require 'pry'
  
 def my_collect(array)
+  new_arr = []
   i = 0
-  fnames = []
   while i < array.length
-    fnames << yield(array[i])
+    new_arr.push(yield(array[i]))
     i = i+1
-    end
-  return fnames
+  end
+	new_arr
 end
 
-my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) { |item| item.split(" ").first }
+# my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) { |item| item.split(" ").first }
