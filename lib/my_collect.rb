@@ -6,9 +6,10 @@ def my_collect(arr)
   
   while i < arr.length 
   new_arr << yield(arr[i])
+  i += 1
   
-  break
   end
+  
   new_arr
 end 
 
