@@ -7,6 +7,10 @@ def my_collect(lang, students)
     i += 1
   end
   
+  j = 0
+  students_first = []
+  while j < students.length
+    
   
   
   new_lang
