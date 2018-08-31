@@ -1,19 +1,9 @@
-def my_collect(lang)
+def my_collect(arg)
   i = 0
-  new_lang = []
-  while i < lang.length  
-    new_lang.push(yield lang[i])
+  new_arg = []
+  while i < arg.length  
+    new_arg.push(yield arg[i])
     i += 1
   end
-  new_lang
+  new_arg
 end
-
-
-
-  # i = 0
-  # new_names = []
-  # while i < names.length
-  #   new_names.push(yield names[i].split(" ").first)
-  #   i += 1
-  # end
-  # new_names
