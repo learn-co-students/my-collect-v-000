@@ -1,9 +1,15 @@
-def my_collect(arr)
+def my_collect(lang, students)
+  i = 0
+  new_lang = []
+  
+  while i < lang.length  
+    new_lang.push(yield lang[i].upcase)
+    i += 1
+  end
   
   
   
-  
-
+  new_lang
 end
 
 
