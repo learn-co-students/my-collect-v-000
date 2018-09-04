@@ -5,9 +5,10 @@ def my_collect(collection)
  collection = []
  while i < collection.length 
  collection << yield(collection[i])
- my_collect(collection) do |name|
-    name.split(" ").first
+  i += 1
   end
-  yield 
+my_collect(collection) {|collect| puts #{collect}}
 end
 end
+
+
