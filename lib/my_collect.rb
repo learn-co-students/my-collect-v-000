@@ -1,12 +1,12 @@
 
-def my_collect(collection)
+def my_collect(array)
   i = 0
-  new_collection = []
-  while i < collection.length
-    new_collection << yield(collection[i])
+  collection = []
+  while i < array.length
+    collection << yield(array[i])
     i += 1
   end
-  new_collection
+  collection
 end
 
 #your #my_collect method should not share about the contents of the code block.
