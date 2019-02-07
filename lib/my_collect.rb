@@ -10,4 +10,4 @@ def my_collect(array)
 	new_arr
 end
 
-# my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) { |item| item.split(" ").first }
+my_collect(["Tim Jones", "Tom Smith", "Jim Campagno"]) { |item| item.split(" ").first }
